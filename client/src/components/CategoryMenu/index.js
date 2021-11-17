@@ -16,7 +16,7 @@ function CategoryMenu() {
       dispatch({
         type: UPDATE_CATEGORIES,
         categories: categoryData.categories
-      })
+      });
     }
   }, [categoryData, dispatch])
 
