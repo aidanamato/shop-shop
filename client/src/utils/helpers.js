@@ -18,7 +18,7 @@ export function idbPromise(storeName, method, object) {
       const db = request.result;
       // create object store for each type of data and set "primary" key index to be the `_id` of the data
       db.createObjectStore('products', { keyPath: '_id' });
-      db.createObjectStore('categories', { keyPat: '_id' });
+      db.createObjectStore('categories', { keyPath: '_id' });
       db.createObjectStore('cart', { keyPath: '_id' });
 
       // handle any errors with connecting
