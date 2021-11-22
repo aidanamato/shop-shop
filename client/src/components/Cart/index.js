@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Auth from '../../utils/auth';
-import { useStoreContext } from '../../utils/GlobalState';
+import { useSelector, useDispatch } from "react-redux";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 
@@ -14,7 +14,8 @@ import { loadStripe } from '@stripe/stripe-js';
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
-  const [state, dispatch] = useStoreContext();
+  const state = useSelector(state => state);
+  const dispatch = useDispatch();
   console.log(state);
 
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);

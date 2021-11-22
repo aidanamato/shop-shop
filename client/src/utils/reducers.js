@@ -1,11 +1,3 @@
-const initialState = {
-  products: [],
-  cart: [],
-  cartOpen: false,
-  categories: [],
-  currentCategory: ''
-};
-
 import { 
   UPDATE_PRODUCTS, 
   UPDATE_CATEGORIES,
@@ -17,6 +9,14 @@ import {
   CLEAR_CART,
   TOGGLE_CART
 } from './actions';
+
+const initialState = {
+  products: [],
+  cart: [],
+  cartOpen: false,
+  categories: [],
+  currentCategory: ''
+};
 
 const shopReducer = (state = initialState, action) => {
   switch (action.type) {
