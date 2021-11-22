@@ -13,6 +13,7 @@ function ProductList() {
   const state = useSelector(state => state);
   const dispatch = useDispatch();
   const { currentCategory } = state;
+  console.log(state);
   
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
@@ -41,7 +42,6 @@ function ProductList() {
 
   function filterProducts() {
     if (!currentCategory) {
-      console.log(state);
       return state.products;
     }
 

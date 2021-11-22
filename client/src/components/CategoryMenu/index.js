@@ -12,7 +12,6 @@ function CategoryMenu() {
 
   useEffect(() => {
     if (categoryData) {
-      console.log(categoryData.categories);
       dispatch({
         type: UPDATE_CATEGORIES,
         categories: categoryData.categories
