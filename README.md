@@ -33,7 +33,7 @@ The deployed application can be found [here]().
 
 Starter Code
 
-* The code used from the module can be found in this [feature branch]().
+* The code used from the module can be found in this [feature branch](https://github.com/aidanamato/shop-shop/tree/feature/no-redux).
 
 Technologies
 
