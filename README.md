@@ -6,7 +6,7 @@
 
 ## Description
 
-This project was a continuation of the asynchronous work done in Module 22. The application was originally set up to implement global state within React using the createContext and useConext hooks from React, and was refactored to instead use Redux to manage global state.
+This project was a continuation of the asynchronous work done in Module 22. The application was originally set up to implement global state within React using the createContext and useContext hooks from React, and was refactored to instead use Redux to manage global state.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ Create an account by clicking the "Login/Sign Up" link in the top left. You can 
 
 ## Deployment
 
-The deployed application can be found [here]().
+The deployed application can be found [here](https://pacific-earth-87189.herokuapp.com/).
 
 ## License
 
